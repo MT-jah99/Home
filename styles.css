@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.hero-image {
+    background: url('https://camo.githubusercontent.com/82a35d733b9e3a242e0d868c046b6f1f2493900731df097f8643b5f3d8615ec5/68747470733a2f2f69302e77702e636f6d2f617070636f64652e6170702f77702d636f6e74656e742f75706c6f6164732f323032312f30392f48544d4c2d4353532d44726976656e2d526573706f6e736976652d496d6167652d536c696465722e706e673f773d313239302673736c3d31') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-image h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-image p {
+    font-size: 24px;
+}
+
+.btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.property-description {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.property-description h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.property-description p,
+.property-description ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.property-description ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.property-description ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.property-description ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.property-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.property-gallery img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 calc(20% - 10px);
+    border-radius: 10px;
+}
+
+.property-map {
+    margin-top: 20px;
+}
+
+.footer-content {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: white;
+    font-size: 20px;
+}
+
+/* Media Queries สำหรับการปรับแต่งบนมือถือ */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-image {
+        padding: 50px 20px;
+    }
+
+    .hero-image h1 {
+        font-size: 32px;
+    }
+
+    .hero-image p {
+        font-size: 18px;
+    }
+
+    .property-gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .property-gallery img {
+        width: 100%;
+    }
+
+    .property-map iframe {
+        width: 100%;
+        height: 300px;
+    }
+}

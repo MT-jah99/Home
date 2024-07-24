@@ -1,0 +1,19 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+
+    // ส่งอีเมล
+    $to = "your-email@example.com";
+    $subject = "ข้อความจากผู้ติดต่อ: $name";
+    $body = "ชื่อ: $name\nอีเมล: $email\n\nข้อความ:\n$message";
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "ข้อความของคุณถูกส่งแล้ว";
+    } else {
+        echo "เกิดข้อผิดพลาดในการส่งข้อความ กรุณาลองใหม่อีกครั้ง";
+    }
+}
+?>
