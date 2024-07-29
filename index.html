@@ -3,82 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โปรโมทบ้านขายหรือเช่า</title>
+    <title>บ้านสวยสำหรับขาย/เช่า - บ้านในฝันของคุณ</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="logo">บ้านกำลังรอคุณอยู่</div>
-        <nav>
-            <ul>
-                <li><a href="#home">หน้าแรก</a></li>
-                <li><a href="#property-detail">รายละเอียดทรัพย์สิน</a></li>
-                <li><a href="#contact">ติดต่อ</a></li>
-            </ul>
-        </nav>
-        <div class="contact-info">
-            <p>โทรหาเรา: 085-1129097</p>
+        <div class="container">
+            <div class="logo">บ้านในฝันของคุณ</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">หน้าแรก</a></li>
+                    <li><a href="#property-detail">รายละเอียด</a></li>
+                    <li><a href="#gallery">แกลเลอรี</a></li>
+                    <li><a href="#contact">ติดต่อ</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-image">
-            <h1>บ้านสวยสำหรับขาย/เช่า</h1>
-            <p>บ้านในฝันของคุณรออยู่</p>
-            <a href="#property-detail" class="btn">ดูรายละเอียด</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>บ้านสวยสำหรับขาย/เช่า</h1>
+                <p>สัมผัสความสุขในบ้านที่ใช่สำหรับคุณ</p>
+                <a href="#property-detail" class="btn-primary">ดูรายละเอียด</a>
+            </div>
+        </section>
 
-    <!-- Property Detail -->
-    <section id="property-detail">
-        <h2>รายละเอียดทรัพย์สิน</h2>
-        <div class="property-description">
-            <h3>ขายหรือเช่าบ้านในสวรรค์แห่งความสงบ!</h3>
-            <p><strong>ที่ตั้ง:</strong> ตำบลสระแก้ว อำเภอลาดยาว จังหวัดนครสวรรค์</p>
-            <p><strong>รายละเอียด:</strong></p>
-            <ul>
-                <li>2 ห้องนอน (แบบแบ่งเช่า 1 ห้องนอน)</li>
-                <li>2 ห้องน้ำ (แบบแบ่งเช่า 1 ห้องน้ำ)</li>
-                <li>หน้าบ้านกว้างขวาง มีต้นไม้สวยงาม</li>
-            </ul>
-            <p><strong>จุดเด่น:</strong></p>
-            <ul>
-                <li>ใกล้หน่วยงานราชการ โรงเรียน และวัด</li>
-                <li>เหมาะสำหรับครอบครัวที่ต้องการเริ่มธุรกิจ เช่น ซ่อมรถ หรือขายส่งสินค้า</li>
-            </ul>
-            <p><strong>ราคา:</strong></p>
-            <ul>
-                <li>ขาย: 3.75 ล้าน บาท</li>
-                <li>เช่า: 6,000 บาท/เดือน</li>
-            </ul>
-            <p><strong>สนใจติดต่อ:</strong></p>
-            <ul>
-                <li>โทร: 085-1129097</li>
-                <li>ไลน์: jahboy9999</li>
-            </ul>
-            <p>อย่าพลาดโอกาสในการเป็นเจ้าของบ้านในพื้นที่ดีเยี่ยมนี้! ติดต่อเราวันนี้เพื่อดูบ้าน!</p>
-        </div>
-        <div class="property-gallery">
-            <img src="https://i.ibb.co/cX2g7HN/IMG-8818.jpg" alt="ภาพทรัพย์สิน 1">
-            <img src="https://i.ibb.co/ZKZD1LW/IMG-8817.jpg" alt="ภาพทรัพย์สิน 2">
-            <img src="https://i.ibb.co/56cDrT9/IMG-8816.jpg" alt="ภาพทรัพย์สิน 3">
-            <img src="https://i.ibb.co/g3fXM5k/IMG-2177.jpg" alt="ภาพทรัพย์สิน 4">
-            <img src="https://i.ibb.co/nRsC6Lb/IMG-2176.jpg" alt="ภาพทรัพย์สิน 5">
-        </div>
-        <div class="property-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d570.7839856835208!2d99.79706984844289!3d15.763742805424469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sth!2sth!4v1721829145560!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
+        <section id="property-detail">
+            <div class="container">
+                <h2>รายละเอียดทรัพย์สิน</h2>
+                <div class="property-card">
+                    <div class="property-info">
+                        <h3>บ้านสวนสไตล์โมเดิร์น</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> ตำบลสระแก้ว อำเภอลาดยาว จังหวัดนครสวรรค์</p>
+                        <ul>
+                            <li><i class="fas fa-bed"></i> 2 ห้องนอน (แบ่งเช่ามี 1 ห้องนอน) </li>
+                            <li><i class="fas fa-bath"></i> 2 ห้องน้ำ (แบ่งเช่ามี 1 ห้องน้ำ) </li>
+                            <li><i class="fas fa-tree"></i> หน้าบ้านกว้างขวาง มีต้นไม้ใหญ่ </li>
+                        </ul>
+                        <div class="property-highlights">
+                            <span><i class="fas fa-star"></i> ใกล้หน่วยงานราชการ</span>
+                            <span><i class="fas fa-graduation-cap"></i> ใกล้โรงเรียน</span>
+                            <span><i class="fas fa-store"></i> เหมาะสำหรับทำธุรกิจ</span>
+                        </div>
+                        <div class="property-price">
+                            <p>
+                                <img src="https://media.tenor.com/6ceOmdT7SHkAAAAi/emoji-emojis.gif" class="emoji-gif">
+                                <strong>ราคาขายบ้านพร้อมที่ดิน :</strong> <span class="price-value">&nbsp;&nbsp;&nbsp;3.75 ล้าน &nbsp;บาท</span>
+                            </p>
+                            <p>
+                                <img src="https://media.tenor.com/6ceOmdT7SHkAAAAi/emoji-emojis.gif" alt="Rent emoji" class="emoji-gif">
+                                <strong>ราคาค่าเช่าต่อเดือน :</strong> <span class="price-value">&nbsp;&nbsp;&nbsp;6,000 บาท/เดือน  &nbsp;&nbsp; (แบ่งเช่าฝั่งประตูสีแดง)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
+        <section id="gallery">
+            <div class="container">
+                <h2>แกลเลอรี</h2>
+                <div class="gallery-grid">
+                    <img src="https://i.ibb.co/cX2g7HN/IMG-8818.jpg" alt="ภาพทรัพย์สิน 1" class="gallery-img">
+                    <img src="https://i.ibb.co/ZKZD1LW/IMG-8817.jpg" alt="ภาพทรัพย์สิน 2" class="gallery-img">
+                    <img src="https://i.ibb.co/56cDrT9/IMG-8816.jpg" alt="ภาพทรัพย์สิน 3" class="gallery-img">
+                    <img src="https://i.ibb.co/g3fXM5k/IMG-2177.jpg" alt="ภาพทรัพย์สิน 4" class="gallery-img">
+                    <img src="https://i.ibb.co/nRsC6Lb/IMG-2176.jpg" alt="ภาพทรัพย์สิน 5" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>ติดต่อเรา</h2>
+                <div class="contact-info">
+                    <p class="phone"><i class="fas fa-phone"></i> <a href="tel:085-1129097">085-1129097</a></p>
+                    <p class="line"><i class="fab fa-line"></i> <a href="https://line.me/ti/p/jahboy9999">jahboy9999</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="footer-content">
+        <div class="container">
             <p>&copy; 2024 Matiphat Cherdsuk สงวนลิขสิทธิ์ทั้งหมด</p>
-            
         </div>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+    // รับ elements
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById("lightbox-img");
+    var captionText = document.getElementById("caption");
+    var closeBtn = document.getElementsByClassName("close")[0];
+    var prevBtn = document.getElementsByClassName("prev")[0];
+    var nextBtn = document.getElementsByClassName("next")[0];
+
+    // รับทุกรูปภาพในแกลเลอรี
+    var galleryImages = document.getElementsByClassName('gallery-img');
+    var currentImageIndex = 0;
+
+    // เพิ่ม event listener ให้กับทุกรูปภาพ
+    for (var i = 0; i < galleryImages.length; i++) {
+        galleryImages[i].onclick = function(){
+            openLightbox(this);
+        }
+    }
+
+    function openLightbox(img) {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+        captionText.innerHTML = img.alt;
+        currentImageIndex = Array.from(galleryImages).indexOf(img);
+    }
+
+    // ปุ่มปิด lightbox
+    closeBtn.onclick = function() {
+        lightbox.style.display = "none";
+    }
+
+    // ปุ่มภาพก่อนหน้า
+    prevBtn.onclick = function() {
+        currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+        lightboxImg.src = galleryImages[currentImageIndex].src;
+        captionText.innerHTML = galleryImages[currentImageIndex].alt;
+    }
+
+    // ปุ่มภาพถัดไป
+    nextBtn.onclick = function() {
+        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+        lightboxImg.src = galleryImages[currentImageIndex].src;
+        captionText.innerHTML = galleryImages[currentImageIndex].alt;
+    }
+
+    // ปิด lightbox เมื่อคลิกนอกรูปภาพ
+    window.onclick = function(event) {
+        if (event.target == lightbox) {
+            lightbox.style.display = "none";
+        }
+    }
+    </script>
 </body>
 </html>
