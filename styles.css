@@ -1,200 +1,350 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
 header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 .logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
+    color: #ff6600;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    list-style: none;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.contact-info {
-    font-size: 14px;
+nav ul li a:hover {
+    color: #ff6600;
 }
 
-.hero-image {
-    background: url('https://camo.githubusercontent.com/82a35d733b9e3a242e0d868c046b6f1f2493900731df097f8643b5f3d8615ec5/68747470733a2f2f69302e77702e636f6d2f617070636f64652e6170702f77702d636f6e74656e742f75706c6f6164732f323032312f30392f48544d4c2d4353532d44726976656e2d526573706f6e736976652d496d6167652d536c696465722e706e673f773d313239302673736c3d31') no-repeat center center/cover;
-    color: white;
+/* Hero Section Styles */
+.hero {
+    background-color: #f4f4f4;
+    padding: 120px 0 40px;
     text-align: center;
-    padding: 100px 20px;
+    color: #333;
 }
 
-.hero-image h1 {
-    font-size: 48px;
-    margin: 0;
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
-.hero-image p {
-    font-size: 24px;
-}
-
-.btn {
-    background-color: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-section {
-    padding: 20px;
-}
-
-.property-description {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.hero p {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-.property-description h3 {
+.btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e55b00;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Property Card Styles */
+.property-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.property-info {
+    padding: 30px;
+}
+
+.property-info h3 {
     font-size: 24px;
-    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ff6600;
 }
 
-.property-description p,
-.property-description ul {
-    font-size: 16px;
-    line-height: 1.6;
+.property-info p {
+    margin-bottom: 15px;
 }
 
-.property-description ul {
-    list-style-type: none;
-    padding-left: 0;
+.property-info ul {
+    list-style: none;
+    margin-bottom: 20px;
 }
 
-.property-description ul li {
-    position: relative;
-    padding-left: 20px;
+.property-info ul li {
     margin-bottom: 10px;
 }
 
-.property-description ul li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #ff6600;
-    font-size: 20px;
-}
-
-.property-gallery {
+.property-highlights {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.property-gallery img {
-    max-width: 100%;
-    height: auto;
-    flex: 1 1 calc(20% - 10px);
-    border-radius: 10px;
+.property-highlights span {
+    background: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-.property-map {
+.property-price {
+    font-size: 24px;
+    font-weight: 700;
     margin-top: 20px;
 }
 
-.footer-content {
-    background-color: #333;
-    color: white;
+.property-price p {
+    margin-bottom: 10px;
+}
+
+.price-value {
+    font-size: 24px;
+    color: #ff6600;
+}
+
+.emoji-gif {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+/* Contact Info Styles */
+.contact-info {
     text-align: center;
-    padding: 20px;
+    font-size: 28px;
 }
 
-.footer-content p {
-    margin: 0;
+.contact-info p {
+    margin-bottom: 20px;
 }
 
-.social-media {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.contact-info i {
+    margin-right: 10px;
+    color: #ff6600;
 }
 
-.social-media li {
-    margin: 0 10px;
+.contact-info a {
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.social-media li a {
+.contact-info .phone a {
+    color: #007bff; /* สีน้ำเงินสำหรับเบอร์โทร */
+}
+
+.contact-info .line a {
+    color: #00b900; /* สีเขียวสำหรับไลน์ */
+}
+
+.contact-info a:hover {
+    opacity: 0.8;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.lightbox-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
     color: white;
+    font-weight: bold;
     font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-/* Media Queries สำหรับการปรับแต่งบนมือถือ */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 
-    .logo {
-        margin-bottom: 10px;
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+        margin-top: 20px;
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 0 10px;
     }
 
-    .hero-image {
-        padding: 50px 20px;
+    .hero h1 {
+        font-size: 30px;
     }
 
-    .hero-image h1 {
-        font-size: 32px;
+    .hero p {
+        font-size: 16px;
     }
 
-    .hero-image p {
-        font-size: 18px;
+    .contact-info {
+        font-size: 24px;
     }
 
-    .property-gallery {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .property-gallery img {
+    .lightbox-content {
         width: 100%;
-    }
-
-    .property-map iframe {
-        width: 100%;
-        height: 300px;
     }
 }
